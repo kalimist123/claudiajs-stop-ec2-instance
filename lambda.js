@@ -28,8 +28,6 @@ exports.handler = function(event, context) {
       var shutDowntag = new ShutdownTag(tagValue);
       if (shutDowntag.isShutDownHour()) InstanceIds.push(ins.InstanceId);
     }
-    console.log(instancesList);
-    console.log(InstanceIds.toString());
 
     if (InstanceIds && InstanceIds.length) {
       stopInstances(InstanceIds);

@@ -14,10 +14,9 @@ class ShutdownTag {
 
       var d = new Date();
       var timeZoneHour = this.getHourForTimezone(tagZone);
-      console.log("tag hour:", tagHour);
-      console.log("timeZone Hour", timeZoneHour);
-      if (tagHour == timeZoneHour) 
-            return true;
+      console.log('tag hour:', tagHour);
+      console.log('timeZone Hour', timeZoneHour);
+      if (tagHour == timeZoneHour) return true;
       return false;
     }
   }
@@ -55,7 +54,7 @@ class ShutdownTag {
   }
 
   isValidHour(tagHour) {
-    if (tagHour >= 1 && tagHour<= 24) return true;
+    if (tagHour >= 1 && tagHour <= 24) return true;
 
     console.log('invalid hour tag', tagHour);
     return false;
