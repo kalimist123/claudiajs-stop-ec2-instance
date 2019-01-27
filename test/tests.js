@@ -1,4 +1,5 @@
 var expect = require('chai').expect;
+var ShutdownTag = require('../shutdownTag.js');
 
 
 
@@ -6,7 +7,7 @@ describe('isValid()', function () {
     it('should return true with a valid tag', function () {
       
       // 1. ARRANGE
-      var ShutdownTag = require('../shutdownTag.js');
+      
       var tag = 'GMT-14'
       var shutdownTag = new ShutdownTag(tag);
       // 2. ACT
@@ -22,7 +23,7 @@ describe('isValid()', function () {
     it('should return false with a invalid tag', function () {
       
       // 1. ARRANGE
-      var ShutdownTag = require('../shutdownTag.js');
+    
       var tag = 'GMT-79'
       var shutdownTag = new ShutdownTag(tag);
       // 2. ACT
@@ -38,7 +39,7 @@ describe('isValidTagHour()', function () {
     it('should return true with a valid hour', function () {
       
       // 1. ARRANGE
-      var ShutdownTag = require('../shutdownTag.js');
+    
       var tag = 'GMT-24'
       var shutdownTag = new ShutdownTag(tag);
       // 2. ACT
@@ -54,7 +55,7 @@ describe('isValidTagHour()', function () {
     it('should return false with an invalid hour', function () {
       
       // 1. ARRANGE
-      var ShutdownTag = require('../shutdownTag.js');
+     
       var tag = 'GMT-25'
       var shutdownTag = new ShutdownTag(tag);
       // 2. ACT
@@ -70,7 +71,7 @@ describe('isValidZone()', function () {
     it('should return false with an invalid tag', function () {
       
       // 1. ARRANGE
-      var ShutdownTag = require('../shutdownTag.js');
+     
       var tag = 'PPP-25'
       var shutdownTag = new ShutdownTag(tag);
       // 2. ACT
@@ -86,7 +87,7 @@ describe('isValidZone()', function () {
     it('should return true with an valid tag', function () {
       
       // 1. ARRANGE
-      var ShutdownTag = require('../shutdownTag.js');
+     
       var tag = 'GMT-24'
       var shutdownTag = new ShutdownTag(tag);
       // 2. ACT
