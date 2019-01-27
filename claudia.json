@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "ecstopinstance-executor",
+    "name": "ecstopinstance",
+    "region": "us-east-1"
+  }
+}
