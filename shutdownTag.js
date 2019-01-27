@@ -64,7 +64,7 @@ class ShutdownTag {
   isValidZone(tagZone) {
     if (this.validZones.includes(tagZone)) return true;
 
-    console.log('invalid zone tag', tagHour);
+    console.log('invalid zone tag', tagZone);
     return false;
   }
 

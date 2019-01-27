@@ -5,11 +5,31 @@
             "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
-               
+                "logs:CreateLogStream",
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "logs:PutLogEvents"
             ],
             "Resource": [
-                
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:logs:*:*:*"
             ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeTags",
+                "ec2:DescribeInstanceStatus"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": "logs:CreateLogGroup",
+            "Resource": "arn:aws:logs:*:*:*"
         }
     ]
 }
